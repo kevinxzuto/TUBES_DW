@@ -7,8 +7,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-header{
-    position: fixed;
+.header{
     width: 100%;
     top: 0;
     right: 0;
@@ -24,6 +23,7 @@ header{
 .logo{
     font-size: larger;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .navbar{
@@ -36,14 +36,13 @@ header{
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 30px;
+    text-decoration: none;
     transition: all .50s ease;
 }
 
 .navbar a:hover{
     color: #FFB633;
 }
-
-
 
 .bxsearch{
     display: flex;
@@ -83,6 +82,43 @@ header{
     padding: 8px;
     margin-left: 5px;
 }
+
+.carousel-item{
+    height: 32rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-text{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 200px;
+
+}
+
+#slide-judul{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#slide-btn{
+    background-color: #FFB633;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+
+#slide-btn:hover
+{
+    background-color: darkorange;
+}
+
+
 
 @media (max-width: 575.98px){
     .navbar a{
