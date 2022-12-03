@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#loginpng{
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+
+.signupbx{
+    position: relative;
+    width: 485px;
+    padding: 50px;
+    background: #FFFFFF;
+    margin-top: 50px;
+    right: 5%;
+    border: 1px solid #BBBBBB;
+    box-sizing: border-box;
+
+}
+
+.signupbx h1{
+    text-align: center;
+}
+
+.signupbx p{
+    text-align: center;
+}
+
+.google{
+    position: relative;
+    right: 70px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+#google{
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 12px;
+    padding: 12px;
+    width: 400px;
+    margin-left: 65px;
+}
+
+#googleimg{
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+#google:hover{
+    background: #ffffff;
+    border: 1px solid #dddbdb;
+    border-radius: 12px;
+}
+
+.signup-input{
+    height: 40px;
+    width: 400px;
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 12px;
+}
+
+.signupbx h6{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#login{
+    margin-left: 120px;
+    border-radius: 10px;
+    background-color: #FFB633;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
