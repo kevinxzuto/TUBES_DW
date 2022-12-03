@@ -20,17 +20,20 @@
     transition: all .50s;
 }
 
+/* navbar */
+
+#logo-navbar{
+    margin-bottom: 5px;
+}
+
 .logo{
     font-size: larger;
     color: var(--text-color);
     text-decoration: none;
+    color: none;
 }
 
-.navbar{
-    display: flex;
-}
-
-.navbar a{
+.collapse a{
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
@@ -40,7 +43,7 @@
     transition: all .50s ease;
 }
 
-.navbar a:hover{
+.navbar-nav a:hover{
     color: #FFB633;
 }
 
@@ -57,14 +60,16 @@
     padding-left: 10px;
     width: 100%;
 }
-
 .bxsearch button{
+    position: relative;
+    right: 14px;
     border-radius: 10px;
     padding: 8px;
     background-color: #FFB633;
     border: none;
     width: 90px;
 }
+
 
 #signup{
     background-color: #FFB633;
@@ -82,6 +87,16 @@
     padding: 8px;
     margin-left: 5px;
 }
+
+#login-nav{
+    display: none;
+}
+
+#signup-nav{
+    display: none;
+}
+
+/* carousel */
 
 .carousel-item{
     height: 32rem;
@@ -118,177 +133,263 @@
     background-color: darkorange;
 }
 
+/* searchbar responsive */
 
-
-@media (max-width: 575.98px){
-    .navbar a{
-        display: none;
-    }
-    .bxsearch{
-        display: none; 
-    }
+.search-carousel{
+    display: none;
 }
 
-@media (min-width: 768px) and (max-width: 991.98px){
-    .navbar a{
-        display: none;
-    }
-}
+/* Brand */
 
-@media (min-width: 992px) and (max-width: 1199.98px){
-    
-}
-
-@media (min-width: 576px) and (max-width: 767.98px){
-    .navbar a{
-        display: none;
-    }
-
-    .bxsearch{
-        display: none;
-    }
-}
-
-/* recomendasi */
-.services {
-    color: #1b2049;
-    widows: 80%;
+.brand-txt{
+    position: relative;
     margin: auto;
-    text-align: center;
-    padding-top: 100px;
-  }
-  
-  h1 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    gap: 0.5em;
-  }
-  
-  p {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-  }
-  
-  .row {
-    margin-top: 5%;
+    max-width: 1120px;
+    background: #FFB633;
+    border-radius: 12px;  
+    padding-bottom: 25px;
+    top: 60px;
+}
+
+.brand-txt h3{
+    margin-left: 10px;
+}
+
+.brandbox{
+    position: relative;
+    margin: auto;
+    max-width: 1120px;
+    background: #ffffff;
+    border-radius: 12px;  
+    margin-top: 50px;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    bottom: 20px;
+    padding-bottom: 100px;
+}
+
+.brand-list{
     display: flex;
-    flex-flow: row wrap;
+}
+
+.brand-list .col{
+    position: relative;
+    display: flex;
     justify-content: center;
-    align-items: flex-start; /* try all 4 of these: stretch, center, flex-start, flex-end */
-    gap: 1em;
-  }
-  
-  .services-col {
-    color: #1b2049;
-    flex: 0 1 20%;
-    min-width: 150px;
-    background: #bcc5d5;
-    border-radius: 10px;
-    padding:  10px;
-    box-sizing: border-box;
-    transition: 0.3;
-  }
-  
-  h3 {
+    top: 50px;
+}
+
+.show-more{
+    position: relative;
+    top: 90px;
+    left: 515px;
+    text-decoration: none;
+}
+
+
+/* popular */
+
+.popular-txt{
+    position: relative;
+    left: 20px;
+    top: 50px;
+    display: flex;
+    margin: auto;
+    max-width: 1120px;
+}
+
+.slide-mobil{
+    display: flex;
+    margin: auto;
+    max-width: 1120px;
+}
+
+.mobilimg{
+    height: 150px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center;
     text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mobilimg .cardimg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#car-name{
+    font-weight: bold;
+}
+
+#car-price{
+    bottom: 15px;
+}
+
+#detail-btn{
+    background-color: #FFB633;
+    width: 300px;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 5px;
+}
+
+/* .btn-next{
+    position: relative;
+    left: 1070px;
+    bottom: 50px;
+} */
+
+/* #next-button{
+    width: 50px;
+    border: none;
+}
+
+.btn-next button{
+    border: none;
+    background-color: none;
+    outline: none;
+    background: none;
+} */
+
+/* feed */
+
+.feed-txt{
+    position: relative;
+    left: 20px;
+    top: 0px;
+    display: flex;
+    margin: auto;
+    max-width: 1120px;
+    margin-top: 250px;
+}
+
+.feed-mobil{
+    display: flex;
+    margin: auto;
+    max-width: 1120px;
+}
+
+.filter{
+    display: flex;
+    margin: auto;
+    max-width: 1090px;
+    background: #D9D9D9;
+    border-radius: 12px;
+    height: 50px;
+}
+
+.filter button{
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+}
+
+.filter-btn{
+    background-color: #D9D9D9;
+}
+
+.active {
+    background-color: #FFB633;
   }
 
-/*footer*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
-	line-height: 1.5;
-	font-family: 'Poppins', sans-serif;
+.filter p{
+    position: relative;
+    top: 12px;
+    left: 17px;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 50px;
 }
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
+
+.feed-mobil .mobilimg{
+    position: relative;
+    bottom: 110px;
+    margin-top: 150px;
 }
-.container{
-	max-width: 1170px;
-	margin:auto;
+
+
+/* footer */
+.text-center{
+    background-color: #FFB633;
+    padding: 5px;
+    margin-top: 30px;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
+
+.text-center p a{
+    text-decoration: none;
+    color: black;
 }
-ul{
-	list-style: none;
+
+.social-img{
+    position: relative;
+    right: 22px;
+    margin-right: 15px;
 }
-.footer{
-	background-color: #FFB633;
-    padding: 70px 0;
+
+.text-center p a:hover{
+    color: #ffffff;
 }
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #000000;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #ffffff;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #000000;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
+
 
 /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+
+@media(max-width: 1425px){
+    .bxsearch{
+        display: none;
+    }
+    .search-carousel{
+        display: flex;
+    }
+    .search-carousel input{
+        position: relative;
+        left: 10px;
+        border-radius: 10px;
+        padding : 8px;
+        background-color: #D9D9D9;
+        border: none;
+        outline: #FFB633;
+        padding-left: 10px;
+        width: 100%;
+    }
+    
+    .search-carousel button{
+        position: relative;
+        right: 10px;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: #FFB633;
+        border: none;
+        width: 90px;
+    }
 }
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
+
+@media(max-width: 439px){
+    #login-nav{
+        display: block;
+    }
+    
+    #signup-nav{
+        display: block;
+    }
+
+    #signup{
+        display: none;
+    }
+
+    #login{
+        display: none;
+    }
+
+    #slide-judul{
+        position: relative;
+        right: 100px;
+    }
+
+    #slide-btn{
+        position: relative;
+        right: 100px;
+    }
 }
